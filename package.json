@@ -1,0 +1,20 @@
+{
+  "name": "pattern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "commonjs",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@flipsidecrypto/sdk": "^2.1.0",
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.2",
+    "prompt-sync": "^4.2.0",
+    "require-from-url": "^3.1.3"
+  }
+}
