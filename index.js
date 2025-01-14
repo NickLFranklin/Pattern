@@ -11,8 +11,7 @@ const modes = {
 async function main(){
     const prompt = require('prompt-sync')();
     const pattern_url = prompt('Input pattern url: ');
-    const funcSig1 = prompt('Input function first signature: ');
-    const funcSig2 = prompt('Input function second signature: ');
+    const funcSig = prompt('Input function signature: ');
 
     const Patterns = requireFromUrl(pattern_url);
     const patterns = new Patterns();
@@ -23,9 +22,8 @@ async function main(){
       "https://api-v2.flipsidecrypto.xyz"
     );
 
-    var sql = patterns.getPattern(modes.FUNC_AFTER_FUNC);
-    sql = sql.replace('func_sig1', funcSig1);
-    sql = sql.replace('func_sig2', funcSig2);
+    var sql = patterns.getPattern(modes.BASIC_FUNCSIG);
+    sql = sql.replace('func_sig', funcSig);
     console.log(sql);
     // Send the `Query` to Flipside's query engine and await the results
     const queryResultSet = await flipside.query.run({sql: sql});
