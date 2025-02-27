@@ -13,6 +13,7 @@ async function main(){
     const pattern_url = prompt('Input pattern url: ');
     const funcSig1 = prompt('Input first function signature: ');
     const funcSig2 = prompt('Input second function signature: ');
+    const contractAddress = prompt('Input contract address to check: ');
 
     const Patterns = requireFromUrl(pattern_url);
     const patterns = new Patterns();
@@ -26,10 +27,11 @@ async function main(){
     var sql = patterns.getPattern(modes.FUNC_AFTER_FUNC);
     sql = sql.replace('func_sig1', funcSig1);
     sql = sql.replace('func_sig2', funcSig2);
+    sql = sql.replaceAll('contract_addr', contractAddress);
     console.log(sql);
     // Send the `Query` to Flipside's query engine and await the results
     const queryResultSet = await flipside.query.run({sql: sql});
-    console.log(queryResultSet)
+    console.log(queryResultSet);
 }
 
 main();
