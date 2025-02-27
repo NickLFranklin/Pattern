@@ -7,10 +7,10 @@ This tool analyzes vulnerabilities in a specific smart contract by leveraging th
 The core of this program lies in the pattern used for input parameters when querying the Flipside Crypto API.
 
 # **How to Use:**
-    >git clone https://github.com/NickLFranklin/Pattern.git
-    >cd Pattern
-    >npm i
-    >node index.js
+    > git clone https://github.com/NickLFranklin/Pattern.git
+    > cd Pattern
+    > npm i
+    > node index.js
         Input pattern url: https://xxx.com/pattern.js
         Input first function signature: 0xa9059cbb
         Input second function signature: 0x095ea7b3
