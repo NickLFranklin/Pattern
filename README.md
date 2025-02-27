@@ -1,7 +1,12 @@
-This tool analyzes vulnerabilities in a specific smart contract by leveraging the Flipside Crypto API to filter relevant transaction data from the vast blockchain dataset.
+About:
+
+    This tool analyzes vulnerabilities in a specific smart contract by leveraging the Flipside Crypto API to 
+    filter relevant transaction data from the vast blockchain dataset.
+
 Key Feature:
 
-The core of this program lies in the pattern used for input parameters when querying the Flipside Crypto API.
+    The core of this program lies in the pattern used for input parameters when querying the Flipside Crypto API.
+
 How to Use:
 
     Provide the input pattern (JavaScript) from a URL.
@@ -11,4 +16,4 @@ How to Use:
 
 Result:
 
-The tool will determine whether the contract is vulnerable or not.
+    The tool will determine whether the contract is vulnerable or not.
